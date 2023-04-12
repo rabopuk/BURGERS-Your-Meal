@@ -1,6 +1,8 @@
 html {
   --container: 300px;
   --padding-container: 10px;
+  --color-accent: #FF5C00;
+  --color-main-color: #FFAB08;
   box-sizing: border-box;
   /* position: relative;
   overflow-x: hidden; */
@@ -25,6 +27,7 @@ body {
 
 img,
 svg {
+  display: block;
   max-width: 100%;
   max-height: 100%;
   height: auto;
@@ -78,4 +81,27 @@ fieldset {
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 480px) {
+  html {
+    --container: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    --padding-container: 64px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    --container: 960px;
+    --padding-container: 32px;
+  }
+}
+
+@media (min-width: 1360px) {
+  html {
+    --container: 1292px;
+  }
+}
