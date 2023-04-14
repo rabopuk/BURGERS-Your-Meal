@@ -44,32 +44,40 @@
         <ul class="navigation__list">
           <li class="navigation__item">
             <button
-              class="navigation__button navigation__button_burger navigation__button_active">Бургеры</button>
+              class="navigation__button navigation__button_burger navigation__button_active"
+              type="button">Бургеры</button>
           </li>
           <li class="navigation__item">
-            <button class="navigation__button navigation__button_snack">Закуски</button>
+            <button class="navigation__button navigation__button_snack"
+              type="button">Закуски</button>
           </li>
           <li class="navigation__item">
-            <button
-              class="navigation__button navigation__button_hot-dog">Хот-доги</button>
+            <button class="navigation__button navigation__button_hot-dog"
+              type="button">Хот-доги</button>
           </li>
           <li class="navigation__item">
-            <button class="navigation__button navigation__button_combo">Комбо</button>
+            <button class="navigation__button navigation__button_combo"
+              type="button">Комбо</button>
           </li>
           <li class="navigation__item">
-            <button class="navigation__button navigation__button_shawarma">Шаурма</button>
+            <button class="navigation__button navigation__button_shawarma"
+              type="button">Шаурма</button>
           </li>
           <li class="navigation__item">
-            <button class="navigation__button navigation__button_pizza">Пицца</button>
+            <button class="navigation__button navigation__button_pizza"
+              type="button">Пицца</button>
           </li>
           <li class="navigation__item">
-            <button class="navigation__button navigation__button_wok">Вок</button>
+            <button class="navigation__button navigation__button_wok"
+              type="button">Вок</button>
           </li>
           <li class="navigation__item">
-            <button class="navigation__button navigation__button_dessert">Десерты</button>
+            <button class="navigation__button navigation__button_dessert"
+              type="button">Десерты</button>
           </li>
           <li class="navigation__item">
-            <button class="navigation__button navigation__button_sauce">Соусы</button>
+            <button class="navigation__button navigation__button_sauce"
+              type="button">Соусы</button>
           </li>
         </ul>
       </div>
@@ -83,7 +91,56 @@
               <span class="order__count">4</span>
             </div>
             <div class="order__wrap-list">
-              <ul class="order__list"></ul>
+              <ul class="order__list">
+                <li class="order__item">
+                  <img src="img/cheesy-burger.jpg" alt="Супер сырный">
+                  <div class="order__product">
+                    <h3 class="order__product-title">Супер сырный</h3>
+                    <p class="order__product-weight">512г</p>
+                    <p class="order__product-amount">
+                      <span class="order__product-price">550</span>
+                      <span class="currency">₽</span>
+                    </p>
+                  </div>
+                  <div class="order__product-count count">
+                    <button class="count-minus" type="button">-</button>
+                    <p class="count__amount">1</p>
+                    <button class="count-plus" type="button">+</button>
+                  </div>
+                </li>
+                <li class="order__item">
+                  <img src="img/fried-potato.jpg" alt="Картошка фри">
+                  <div class="order__product">
+                    <h3 class="order__product-title">Картошка фри</h3>
+                    <p class="order__product-weight">180г</p>
+                    <p class="order__product-amount">
+                      <span class="order__product-price">245</span>
+                      <span class="currency">₽</span>
+                    </p>
+                  </div>
+                  <div class="order__product-count count">
+                    <button class="count-minus" type="button">-</button>
+                    <p class="count__amount">2</p>
+                    <button class="count-plus" type="button">+</button>
+                  </div>
+                </li>
+                <li class="order__item">
+                  <img src="img/spicy-hot-dog.jpg" alt="Жгучий хот-дог">
+                  <div class="order__product">
+                    <h3 class="order__product-title">Жгучий хот-дог</h3>
+                    <p class="order__product-weight">245г</p>
+                    <p class="order__product-amount">
+                      <span class="order__product-price">239</span>
+                      <span class="currency">₽</span>
+                    </p>
+                  </div>
+                  <div class="order__product-count count">
+                    <button class="count-minus" type="button">-</button>
+                    <p class="count__amount">1</p>
+                    <button class="count-plus" type="button">+</button>
+                  </div>
+                </li>
+              </ul>
               <div class="order__total">
                 <p>Итого</p>
                 <p>
@@ -91,10 +148,10 @@
                   <span class="currency">₽</span>
                 </p>
               </div>
-              <button class="order__submit">Оформить заказ</button>
+              <button class="order__submit" type="button">Оформить заказ</button>
               <div class="order__wrap-call">
                 <p class="order__call">Бесплатная доставка</p>
-                <button class="order__close">Свернуть</button>
+                <button class="order__close" type="button">Свернуть</button>
               </div>
             </div>
           </section>
@@ -102,7 +159,79 @@
         <div class="catalog__wrapper">
           <h2 class="catalog__title">Бургеры</h2>
           <div class="catalog__wrap-list">
-            <ul class="catalog__list"></ul>
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <article class="product">
+                  <img class="product__image" src="img/meat-bomb-burger.jpg"
+                    alt="Мясная бомба">
+                  <p class="product__price">689<span class="currency">₽</span></p>
+                  <h3 class="product__title">
+                    <button class="product__detail">Мясная бомба</button>
+                  </h3>
+                  <p class="product__weight">520г</p>
+                  <button class="product__add" type="button">Добавить</button>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="product">
+                  <img class="product__image" src="img/cheesy-burger.jpg"
+                    alt="Супер сырный">
+                  <p class="product__price">550<span class="currency">₽</span></p>
+                  <h3 class="product__title">
+                    <button class="product__detail">Супер сырный</button>
+                  </h3>
+                  <p class="product__weight">512г</p>
+                  <button class="product__add" type="button">Добавить</button>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="product">
+                  <img class="product__image" src="img/hearty-burger.jpg" alt="Сытный">
+                  <p class="product__price">639<span class="currency">₽</span></p>
+                  <h3 class="product__title">
+                    <button class="product__detail">Сытный</button>
+                  </h3>
+                  <p class="product__weight">580г</p>
+                  <button class="product__add" type="button">Добавить</button>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="product">
+                  <img class="product__image" src="img/hard-punch-burger.jpg"
+                    alt="Тяжелый удар">
+                  <p class="product__price">480<span class="currency">₽</span></p>
+                  <h3 class="product__title">
+                    <button class="product__detail">Тяжелый удар</button>
+                  </h3>
+                  <p class="product__weight">470г</p>
+                  <button class="product__add" type="button">Добавить</button>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="product">
+                  <img class="product__image" src="img/calssic-burger.jpg"
+                    alt="Вечная классика">
+                  <p class="product__price">450<span class="currency">₽</span></p>
+                  <h3 class="product__title">
+                    <button class="product__detail">Вечная классика</button>
+                  </h3>
+                  <p class="product__weight">450г</p>
+                  <button class="product__add" type="button">Добавить</button>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="product">
+                  <img class="product__image" src="img/italian-burger.jpg"
+                    alt="Итальянский">
+                  <p class="product__price">560<span class="currency">₽</span></p>
+                  <h3 class="product__title">
+                    <button class="product__detail">Итальянский</button>
+                  </h3>
+                  <p class="product__weight">510г</p>
+                  <button class="product__add" type="button">Добавить</button>
+                </article>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
