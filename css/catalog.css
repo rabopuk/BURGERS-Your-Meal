@@ -3,7 +3,8 @@
 }
 
 .catalog__order {
-  margin-bottom: 30px;
+  min-height: 48px;
+  margin-bottom: 32px;
 }
 
 .catalog__title {
