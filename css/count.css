@@ -1,0 +1,21 @@
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  width: 72px;
+  height: 28px;
+  background: #F2F2F3;
+  border-radius: 8px;
+}
+
+.count-minus {
+  width: 8px;
+}
+
+.count-plus {
+  width: 8px;
+}

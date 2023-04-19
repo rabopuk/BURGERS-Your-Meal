@@ -102,8 +102,6 @@
   margin-bottom: 8px;
 }
 
-.order__product-count {}
-
 .order__total {
   display: flex;
   justify-content: space-between;
