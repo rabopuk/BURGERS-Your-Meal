@@ -4,8 +4,8 @@ html {
   --color-accent: #FF5C00;
   --color-main-color: #FFAB08;
   box-sizing: border-box;
-  /* position: relative;
-  overflow-x: hidden; */
+  position: relative;
+  overflow-x: hidden;
 }
 
 *,
@@ -21,8 +21,8 @@ body {
   min-height: 100vh;
   color: black;
   background-color: #F9F9F9;
-  /* position: relative;
-  overflow-x: hidden; */
+  position: relative;
+  overflow-x: hidden;
 }
 
 img,
