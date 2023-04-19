@@ -86,6 +86,24 @@
   border-radius: 8px;
 }
 
+.order__product {
+  flex-grow: 1;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.order__product-title {
+  font-weight: 400;
+}
+
+.order__product-weight {
+  color: #B1B1B1;
+  margin-bottom: 8px;
+}
+
+.order__product-count {}
+
 .order__total {
   display: flex;
   justify-content: space-between;
