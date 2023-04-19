@@ -54,3 +54,38 @@
   font-size: 12px;
   line-height: 100%;
 }
+
+@media (min-width: 1024px) {
+  .product {
+    padding: 12px;
+    min-height: 412px;
+    border-radius: 20px;
+  }
+
+  .product__image {
+    margin-bottom: 16px;
+    height: 220px;
+    border-radius: 12px;
+  }
+
+  .product__price {
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+
+  .product__title {
+    /* Занимает всё свободное место в карточке */
+    font-size: 16px;
+  }
+
+  .product__weight {
+    font-size: 16px;
+  }
+
+  /* !TODO добавить hover-эффекты */
+  .product__add {
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+}
