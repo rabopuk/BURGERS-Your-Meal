@@ -32,3 +32,14 @@
   color: var(--color-main-color);
   outline-color: var(--color-main-color);
 }
+
+@media (min-width: 480px) {
+  .modal {
+    padding: 24px;
+  }
+
+  .modal__close {
+    top: 16px;
+    right: 16px;
+  }
+}
