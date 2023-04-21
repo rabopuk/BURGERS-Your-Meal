@@ -162,10 +162,10 @@
               <li class="catalog__item">
                 <article class="product">
                   <img class="product__image" src="img/meat-bomb-burger.jpg"
-                    alt="Мясная бомба">
+                    alt="Мясная бИмба">
                   <p class="product__price">689<span class="currency">₽</span></p>
                   <h3 class="product__title">
-                    <button class="product__detail">Мясная бомба</button>
+                    <button class="product__detail">Мясная бИмба</button>
                   </h3>
                   <p class="product__weight">520г</p>
                   <button class="product__add" type="button">Добавить</button>
@@ -289,8 +289,55 @@
       </div>
     </div>
   </footer>
-  <div class="modal"></div>
-  <div class="modal"></div>
+  <div class="modal modal_product modal_open">
+    <div class="modal__main modal-product">
+      <div class="modal-product__container">
+        <h2 class="modal-product__title">Мясная бИмба</h2>
+        <div class="modal-product__content">
+          <img class="modal-product__image" src="img/meat-bomb-burger.jpg"
+            alt="Мясная бИмба">
+          <p class="modal-product__description">Супер мясное наслаждение! Большая рубленая
+            котлета из свежего говяжего мяса покорит вас
+            своей сочностью, а хрустящие листья салата добавят свежести.
+          </p>
+          <div class="modal-products__ingredients ingredients">
+            <h3 class="ingredients__title">Состав:</h3>
+            <ul class="ingredients__list">
+              <li class="ingredients__item">Пшеничная булочка</li>
+              <li class="ingredients__item">Котлета из говядины</li>
+              <li class="ingredients__item">Красный лук</li>
+              <li class="ingredients__item">Листья салата</li>
+              <li class="ingredients__item">Соус горчичный</li>
+            </ul>
+            <p class="ingredients__calories">520г, ккал 430</p>
+          </div>
+          <div class="modal-product__footer">
+            <div class="modal-product__add">
+              <button class="modal-product__btn" type="button">Добавить</button>
+              <div class="modal-product__count">
+                <button class="count-minus" type="button">-</button>
+                <p class="count__amount">1</p>
+                <button class="count-plus" type="button">+</button>
+              </div>
+            </div>
+            <p class="modal-product__price">689
+              <span class="currency">₽</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="modal-product__close" type="button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect x="5.07422" y="5.28247" width="1" height="20"
+            transform="rotate(-45 5.07422 5.28247)" />
+          <rect x="5.78125" y="19.4246" width="1" height="20"
+            transform="rotate(-135 5.78125 19.4246)" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
   <script>
     document.querySelector('.order__wrap-title').addEventListener('click', () => {
       document.querySelector('.order').classList.toggle('order_open');
