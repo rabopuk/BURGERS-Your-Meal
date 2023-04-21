@@ -44,8 +44,6 @@
   margin-bottom: 16px;
 }
 
-.modal-product__footer {}
-
 .modal-product__add {
   margin-bottom: 16px;
   display: flex;
@@ -66,15 +64,9 @@
   color: white;
 }
 
-.modal-product__count {}
-
 .modal-product__price {
   text-align: right;
   font-weight: 600;
   font-size: 16px;
   line-height: 130%;
 }
-
-.currency {}
-
-.modal-product__close {}
