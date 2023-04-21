@@ -13,8 +13,22 @@
 }
 
 .modal__main {
+  position: relative;
   cursor: default;
   margin: auto;
 }
 
-.modal__close {}
+.modal__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border-radius: 8px;
+  color: #B1B1B1;
+  outline: 1px solid transparent;
+  outline-offset: 4px;
+}
+
+.modal__close:focus-visible {
+  color: var(--color-main-color);
+  outline-color: var(--color-main-color);
+}
