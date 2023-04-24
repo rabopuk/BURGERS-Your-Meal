@@ -63,6 +63,7 @@
   font-size: 12px;
   line-height: 100%;
   color: white;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.4s ease-in-out;
 }
 
 .modal-product__price {
@@ -70,6 +71,31 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 130%;
+}
+
+.modal-product__btn:hover {
+  background-color: var(--color-main-color);
+}
+
+/* Лучше использовать focus-visible вместо focus */
+.modal-product__btn:focus-visible {
+  background-color: #F86310;
+}
+
+.modal-product__btn:active {
+  transform: translate(1px, 2px);
+}
+
+.modal-product__btn:disabled {
+  background-color: #F9F9F9;
+  color: #ACACAC;
+}
+
+/* Если не поддерживается браузером focus-visible */
+@supports not selector(:focus-visible) {
+  .modal-product__btn:focus {
+    background-color: #F86310;
+  }
 }
 
 @media (min-width: 480px) {
