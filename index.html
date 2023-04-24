@@ -389,12 +389,20 @@
       document.querySelector('.order').classList.toggle('order_open');
     });
 
+    document.querySelector('.order__submit').addEventListener('click', () => {
+      document.querySelector('.modal_delivery').classList.add('modal_open');
+    });
+
     document.querySelector('.order__close').addEventListener('click', () => {
       document.querySelector('.order').classList.remove('order_open');
     });
 
-    document.querySelector('.modal__close').addEventListener('click', () => {
-      document.querySelector('.modal').classList.remove('modal_open');
+    document.querySelector('.modal-product__close').addEventListener('click', () => {
+      document.querySelector('.modal_product').classList.remove('modal_open');
+    });
+
+    document.querySelector('.modal-delivery__close').addEventListener('click', () => {
+      document.querySelector('.modal_delivery').classList.remove('modal_open');
     });
 
     document.querySelector('.product__title').addEventListener('click', () => {
