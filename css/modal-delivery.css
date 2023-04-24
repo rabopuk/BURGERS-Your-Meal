@@ -128,12 +128,86 @@
   font-size: 12px;
   line-height: 100%;
   color: white;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.4s ease-in-out;
 }
 
-@media (min-width: 480px) {}
+.modal-delivery__submit:hover {
+  background-color: var(--color-main-color);
+}
 
-@media (min-width: 480px) {}
+/* Лучше использовать focus-visible вместо focus */
+.modal-delivery__submit:focus-visible {
+  background-color: #F86310;
+}
 
-@media (min-width: 480px) {}
+.modal-delivery__submit:active {
+  transform: translate(1px, 2px);
+}
 
-@media (min-width: 480px) {}
+.modal-delivery__submit:disabled {
+  background-color: #F9F9F9;
+  color: #ACACAC;
+}
+
+/* Если не поддерживается браузером focus-visible */
+@supports not selector(:focus-visible) {
+  .modal-delivery__submit:focus {
+    background-color: #F86310;
+  }
+}
+
+@media (min-width: 480px) {
+  .modal-delivery {
+    padding: 20px 16px 28px;
+    max-width: 524px;
+    min-height: auto;
+    border-radius: 24px;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .modal-delivery__container {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  /* Это было интересно */
+  .modal-delivery {
+    padding: 44px 24px 24px 364px;
+    max-width: 684px;
+    border-radius: 24px;
+    background: url('../img/donut.svg') 20px center, linear-gradient(to right, var(--color-main-color) 50%, white 50%);
+    background-repeat: no-repeat;
+    background-size: 300px, auto;
+  }
+
+  .modal-delivery__title {
+    font-size: 24px;
+  }
+
+  .modal-delivery__form {
+    margin-bottom: 32px;
+    gap: 16px;
+  }
+
+  .modal-delivery__fieldset_radio {
+    gap: 12px;
+  }
+
+  .modal-delivery__label {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .modal-delivery__input {
+    padding: 12px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .modal-delivery__submit {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
